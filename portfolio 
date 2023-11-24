@@ -1,0 +1,266 @@
+<!DOCTYPE html>                   
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY PORTFOLIO</title>
+  <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap" rel="stylesheet">
+
+    /*  */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(0, 6, 23);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background: black;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 30px;
+    }
+
+    nav ul li {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+    }
+
+    nav ul li a :hover {
+      color: brown;
+      font-size: 1.04rem;
+    }
+
+    main hr {
+      border: 0;
+      background: cadetblue;
+      height: 1.2px;
+      margin: 40px 84px;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 130px 0;
+    }
+
+    .firstSection>div {
+      width: 30%;
+    }
+
+    .leftSection {
+      font-size: 2.5rem;
+    }
+    .leftSection .buttons{
+      padding:30px;
+    }
+
+    .leftSection .btn {
+      background: #05092b;
+      color: white;
+      border: 2px solid white;
+      border-radius: 10px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .rightSection img {
+      width: 80%;
+      margin: 50px 0;
+    }
+
+    .purple {
+      color: blueviolet;
+    }
+
+    #element {
+      color: blueviolet;
+    }
+
+    .secondSection {
+      max-width: 85vw;
+      margin: auto;
+      height: 80vh;
+    }
+
+    .text-gray {
+      color: gray;
+    }
+
+    .secondSection h1 {
+      font-size: 1.5rem;
+    }
+
+    .secondSection .box {
+      background: white;
+      width: 85vw;
+      height: 2px;
+      margin: 56px 0;
+      display: flex;
+      top: auto;
+    }
+
+    .secondSection .vertical {
+      height: 50px;
+      width: 1px;
+      background: white;
+      margin: 0 100px;
+    }
+
+    .image-top {
+      width: 23px;
+      position: relative;
+      top: -30px;
+      left: -10px;
+    }
+
+    .vertical-title {
+      position: relative;
+      left: -30px;
+      top: 30px;
+    }
+
+    .vertical-desc {
+      position: relative;
+      color: gray;
+      width: 140px;
+      font-size: xx-small;
+      left: -30px;
+      top: 35px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">AISH'S PORTFOLIO</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/">ABOUT</a></li>
+          <li><a href="/">SERVICES</a></li>
+          <li><a href="/">PROJECTS</a></li>
+          <li><a href="/">CONTACT ME</a></li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi, My Name Is <span class="purple">Aishwarya Singh</span>
+        <div>And I'm a Passionate</div>
+        <span id="element"></span>
+        <div class="buttons">
+          <a href="Aishwarya resume.pdf.pdf" target="_blank" class="btn">DOWNLOAD RESUME</a>
+          <button class="btn">VISIT GITHUB</button>
+        </div>
+      </div>
+      
+      <div class="rightSection">
+        <img src="bgpic.png" alt style="
+  width: 80%;
+  margin: 50px 0">
+      </div>
+    </section>
+    <hr>
+    <section class="secondSection">
+      <span class="text-gray"> What I Have Done So Far</span>
+      <h1>Work Experiences</h1>
+
+      <div class="box">
+        <div class="vertical">
+          <img class="image-top" src="developers.png" alt="">
+          <div class="vertical-title">
+            DRDO(DEBEL)
+            INTERNSHIP(NOV-2023)
+          </div>
+          <div class="vertical-desc">
+           Research Intern from Nov 2023 for a month 
+           in this period of time i have
+           Learnt about Exoskeleton,Rapberry pi,and BNO055 Sensor
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="developers.png" alt="">
+          <div class="vertical-title">
+            CODSOFT INTERNSHIP(NOV-2023)
+          </div>
+          <div class="vertical-desc">
+           Gave me a vast knowledege to explore more about
+           html css and javascript learnt a lot of new things 
+           created my own portfolio 
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="developers.png" alt="">
+          <div class="vertical-title">
+            MVJCE(2021-2025)
+          </div>
+          <div class="vertical-desc">
+            Information Science student from Sep 2021 to
+            the next 2 coming years with a strong base 
+            in various software subjects
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="developers.png" alt="">
+          <div class="vertical-title">
+            KVASC(2009-2018)
+          </div>
+          <div class="vertical-desc">
+            Fisnished my elementary school from KVASC
+            with a strong base and foundation
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="developers.png" alt="">
+          <div class="vertical-title">
+            KVASC(2021-2021)
+          </div>
+          <div class="vertical-desc">
+            Finished my Senior Secondary from KVASC
+            with a strong foundation in computer science in python
+            and other basic subjects like maths physics and chemistry 
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Graphic Designer', 'Video Editor',],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>
