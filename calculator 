@@ -1,102 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix India - Watch TV Shows</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Colorful Calculator</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .calculator {
+      width: 300px;
+      margin: 0 auto;
+      border: 1px solid #3498db;
+      padding: 10px;
+      text-align: center;
+      background-color: #2c3e50;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .calculator input {
+      width: 60px;
+      margin-bottom: 5px;
+      margin-right: 5px;
+      background-color: #34495e;
+      color: #ecf0f1;
+      border: 1px solid #3498db;
+      padding: 8px;
+      outline: none;
+    }
+
+    .calculator input.operator {
+      background-color: #e74c3c;
+      color: #ecf0f1;
+      border: 1px solid #c0392b;
+    }
+
+    .calculator input.equal {
+      background-color: #2ecc71;
+      color: #ecf0f1;
+      border: 1px solid #27ae60;
+    }
+
+    .calculator input.clear {
+      background-color: #e74c3c;
+      color: #ecf0f1;
+      border: 1px solid #c0392b;
+    }
+  </style>
 </head>
 <body>
-   <div class="nav">
-       <img class="logo" src="logo.png" alt="">
-       <label for="Language"></label>
-       <select name="Language" id="">
-           <option value="English">English</option>
-           <option value="English">Hindi</option>
-       </select>
-       <a class="btn" href="#">Sign In</a>
-   </div> 
-   <div class="content">
-       <h1>Unlimited movies, TV <br> shows and more.</h1>
-       <h2>Watch anywhere. Cancel anytime.</h2>
-       <p>Ready to watch? Enter your email to create or restart your membership.</p>
-       <div class="mail">
-           <input type="text" placeholder="Email address">
-           <a href="#">Get Started</a>
-       </div>
-   </div>
+  <div class="calculator">
+    <input type="text" id="result" readonly>
+    <br>
+    <input type="button" value="1" onclick="appendToResult('1')">
+    <input type="button" value="2" onclick="appendToResult('2')">
+    <input type="button" value="3" onclick="appendToResult('3')">
+    <input type="button" class="operator" value="+" onclick="appendToResult('+')">
+    <br>
+    <input type="button" value="4" onclick="appendToResult('4')">
+    <input type="button" value="5" onclick="appendToResult('5')">
+    <input type="button" value="6" onclick="appendToResult('6')">
+    <input type="button" class="operator" value="-" onclick="appendToResult('-')">
+    <br>
+    <input type="button" value="7" onclick="appendToResult('7')">
+    <input type="button" value="8" onclick="appendToResult('8')">
+    <input type="button" value="9" onclick="appendToResult('9')">
+    <input type="button" class="operator" value="*" onclick="appendToResult('*')">
+    <br>
+    <input type="button" value="0" onclick="appendToResult('0')">
+    <input type="button" class="operator" value="/" onclick="appendToResult('/')">
+    <input type="button" class="equal" value="=" onclick="calculateResult()">
+    <input type="button" class="clear" value="Clear" onclick="clearResult()">
+  </div>
+
+  <script>
+    function appendToResult(value) {
+      document.getElementById("result").value += value;
+    }
+
+    function calculateResult() {
+      var result = document.getElementById("result").value;
+      var answer = eval(result);
+      document.getElementById("result").value = answer;
+    }
+
+    function clearResult() {
+      document.getElementById("result").value = "";
+    }
+  </script>
 </body>
 </html>
-body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: rgba(0, 0, 0, 0.6) url('image.jpg');
-    background-blend-mode: darken;
-}
-
-.logo{
-    width: 12%;
-}
-
-.btn{
-    padding: 8px 15px;
-    color: #fff;
-    background-color: #e50914;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.nav{
-    padding-top: 5px;
-    padding-left: 2vw;
-    padding-right: 5vw;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-select{
-    margin-left: 70%;
-    padding: 8px;
-}
-
-.content{
-    color: #fff;
-    position: absolute;
-    margin-top: 8%;
-    margin-left: 30%;
-}
-
-.content h1{
-    font-size: 50px;
-}
-
-.content h2{
-    font-size: 30px;
-}
-
-.mail{
-    width: 100%;
-    height: fit-content;
-    align-items: center;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-}
-
-.mail input{
-    outline: none;
-    border: none;
-    padding: 12px 10px;
-    size: 1em;
-}
-
-.mail a{
-    height: fit-content;
-    background-color: #e50914;
-    color: #fff;
-    padding: 18px 12px;
-    text-decoration: none;
-}
