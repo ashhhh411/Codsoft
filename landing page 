@@ -65,6 +65,15 @@
         <h2>Welcome to the World of Disney Pixar</h2>
         <p>Discover the magic of storytelling through captivating animations and heartwarming characters.</p>
         <!-- Add more content and styling as needed -->
+        <div class="content">
+            <h1>Unlimited movies, TV <br> shows and more.</h1>
+            <h2>Watch anywhere.</h2>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="mail">
+                <input type="text" placeholder="Email address">
+                <a href="#">Get Started</a>
+            </div>
+        </div>
     </section>
 
     <footer>
