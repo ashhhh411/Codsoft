@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney Pixar Landing Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #0e0126;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #5c22a3;
+            box-shadow: 0 0 10px rgb(48, 162, 193);
+        }
+
+        h1 {
+            color: rgb(223, 232, 232);
+        }
+
+        p {
+            color: rgb(154, 38, 154);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        footer {
+            background-color: pink;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Disney Pixar</h1>
+        <p>Magic in Every Frame</p>
+    </header>
+
+    <section>
+        <img src="logoo.png" alt="Disney Pixar Image">
+        <h2>Welcome to the World of Disney Pixar</h2>
+        <p>Discover the magic of storytelling through captivating animations and heartwarming characters.</p>
+        <!-- Add more content and styling as needed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Disney Pixar. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
